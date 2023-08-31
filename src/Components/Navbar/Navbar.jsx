@@ -7,7 +7,16 @@ import {TbGridDots} from 'react-icons/tb'
 
 
 const Navbar = () => {
-  const [active, setActive] = useState("")
+  // to toggle and open navbar
+  const [active, setActive] = useState('navBar')
+  const showNav =()=>{
+    setActive('navBar activeNavbar')
+  }
+
+  // to remove navbar
+ const removeNav =()=>{
+    setActive('navBar')
+  }
   return (
     <section className='navBarSection'>
       <div className='header'>
@@ -19,7 +28,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="navBar">
+      <div className={active}>
         <ul className="navLists flex">
 
           <li className="navItem">
@@ -52,11 +61,11 @@ const Navbar = () => {
             </button>
           </div>
         </ul>
-        <div className="closeNavbar">
+        <div onClick ={removeNav} className="closeNavbar">
           <AiFillCloseCircle className='icon'/>
         </div>
       </div>
-      <div className="toogleNavbar">
+      <div onClick ={showNav} className="toogleNavbar">
       <TbGridDots className="icon"/>
       </div>
       </div>
