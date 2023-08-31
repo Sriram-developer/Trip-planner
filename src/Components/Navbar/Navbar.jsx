@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-import {GiHummingbird} from 'react-icons/gi'
+import {SiYourtraveldottv} from 'react-icons/si'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 
@@ -8,38 +8,37 @@ import {TbGridDots} from 'react-icons/tb'
 
 const Navbar = () => {
   return (
-    <section className='navBarsection'>
+    <section className='navBarSection'>
       <div className='header'>
-
         <div className='logoDiv'>
-        <a href='#' className='logo'>
-          <h1><GiHummingbird className='icon'/>
-          Cartrabbit
+        <a href='#'className='logo'>
+          <h1 className='flex'><SiYourtraveldottv className='icon'/>
+           CARTTRIP
           </h1>
         </a>
       </div>
 
       <div className="navBar">
-        <ul className="navList flex">
+        <ul className="navLists flex">
 
           <li className="navItem">
-            <a href="#" className="navlink">Home</a>
+            <a href="#" className="navLink">Home</a>
           </li>
 
           <li className="navItem">
-            <a href="#" className="navlink">Plan</a>
+            <a href="#" className="navLink">Plan</a>
           </li>
 
           <li className="navItem">
-            <a href="#" className="navlink">Resource</a>
+            <a href="#" className="navLink">Resource</a>
           </li>
 
           <li className="navItem">
-            <a href="#" className="navlink">Contacts</a>
+            <a href="#" className="navLink">Contacts</a>
           </li>
 
           <li className="navItem">
-            <a href="#" className="navlink">Blog</a>
+            <a href="#" className="navLink">Blog</a>
           </li>
 
           <div className="headerBtns flex">
@@ -47,7 +46,7 @@ const Navbar = () => {
               <a href='#'>Login</a>
             </button>
 
-            <button className='btn loginBtn'>
+            <button className='btn'>
               <a href='#'>Sign Up</a>
             </button>
           </div>
