@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  transition: .3s ease;
-}
   /* colors */
   :root{
     --PrimaryColor: hsl(26, 93%, 50%);
@@ -56,7 +48,7 @@
                 padding: 1rem;
                 width: 100%;
                 top:0%;
-                left: 0%;
+                left: -500%;
                 box-shadow: 0 2px 4px rgba(209,209,209,0.904);
                 transition: .5s ease;
                 z-index: 1000;    
@@ -119,6 +111,10 @@
                 }
               }
             } 
+
+            .activeNavbar{
+                left
+            }
         }
     }
 }
