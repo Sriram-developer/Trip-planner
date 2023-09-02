@@ -9,4 +9,90 @@
   --greyBg: hsl(0, 2%, 83%);
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
+}
+
+.home {
+  height: 80vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/bgimage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.home .secContainer .homeText {
+  text-align: center;
+}
+.home .secContainer .homeText .title {
+  color: var(--whiteColor);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.home .secContainer .homeText .subTitle {
+  color: var(--whiteColor);
+  opacity: 0.9;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 1rem 0;
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.home .secContainer .homeText .btn {
+  padding: 0.6rem 1.5rem;
+}
+.home .secContainer .homeCard {
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--whiteColor);
+  position: absolute;
+  gap: 1rem;
+  justify-content: center;
+  bottom: -35%;
+  transform: translate(-50%);
+  left: 50%;
+  box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+}
+.home .secContainer .homeCard .locationDiv, .home .secContainer .homeCard .startDiv, .home .secContainer .homeCard .endDiv {
+  width: 100%;
+}
+.home .secContainer .homeCard .locationDiv label, .home .secContainer .homeCard .startDiv label, .home .secContainer .homeCard .endDiv label {
+  display: block;
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: -4rem;
+}
+.home .secContainer .homeCard .locationDiv input, .home .secContainer .homeCard .startDiv input, .home .secContainer .homeCard .endDiv input {
+  width: 100%;
+  background: var(--inputColor);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.home .secContainer .homeCard .locationDiv input::-moz-placeholder, .home .secContainer .homeCard .startDiv input::-moz-placeholder, .home .secContainer .homeCard .endDiv input::-moz-placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 2;
+}
+.home .secContainer .homeCard .locationDiv input::placeholder, .home .secContainer .homeCard .startDiv input::placeholder, .home .secContainer .homeCard .endDiv input::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 2;
+}
+.home .secContainer .homeCard .locationDiv input:focus, .home .secContainer .homeCard .startDiv input:focus, .home .secContainer .homeCard .endDiv input:focus {
+  outline: none;
+}
+.home .secContainer .homeCard .btn {
+  width: 100%;
+  padding: -6rem 1.5rem;
+  color: var(--whiteColor);
+  font-weight: 600;
 }/*# sourceMappingURL=home.css.map */

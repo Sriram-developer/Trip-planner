@@ -22,9 +22,7 @@ const Navbar = () => {
       <div className='header'>
         <div className='logoDiv'>
         <a href='#'className='logo'>
-          <h1 className='flex'><SiYourtraveldottv className='icon'/>
-           CARTTRIP
-          </h1>
+          <h1 className='flex'> <SiYourtraveldottv className='icon'/>CARTTRIP</h1>
         </a>
       </div>
 
@@ -65,7 +63,7 @@ const Navbar = () => {
           <AiFillCloseCircle className='icon'/>
         </div>
       </div>
-      <div onClick ={showNav} className="toogleNavbar">
+      <div onClick ={showNav} className="toggleNavbar">
       <TbGridDots className="icon"/>
       </div>
       </div>
