@@ -5,7 +5,66 @@ import { BsArrowRightShort } from 'react-icons/bs'
 import { BsDot } from 'react-icons/bs'
 
 // importing image
-import img from "../../Assets/image.jpg"
+import img2 from "../../Assets/image.jpg"
+import img3 from "../../Assets/image3.jpg"
+import img4 from "../../Assets/image4.jpg"
+import img5 from "../../Assets/image5.jpg"
+import img6 from "../../Assets/image6.jpg"
+import img7 from "../../Assets/image7.jpg"
+
+
+
+// Sriram remember -> high order array method by Map
+
+const Data = [
+  {
+    id:1,
+    imgSrc: img2,
+    destTitle: "marriot",
+    location: "peru",
+    grade: "Cultural Relax",
+  },
+
+  {
+    id:2,
+    imgSrc: img3,
+    destTitle: "marriot",
+    location: "peru",
+    grade: "Cultural Relax",
+  },
+
+  {
+    id:3,
+    imgSrc: img4,
+    destTitle: "marriot",
+    location: "peru",
+    grade: "Cultural Relax",
+  },
+
+  {
+    id:3,
+    imgSrc: img5,
+    destTitle: "marriot",
+    location: "peru",
+    grade: "Cultural Relax",
+  },
+
+  {
+    id:4,
+    imgSrc: img6,
+    destTitle: "marriot",
+    location: "peru",
+    grade: "Cultural Relax",
+  },
+
+  {
+    id:5,
+    imgSrc: img7,
+    destTitle: "marriot",
+    location: "peru",
+    grade: "Cultural Relax",
+  },
+]
 
 const Popular = () => {
   return (
@@ -27,30 +86,35 @@ const Popular = () => {
             </div>
         </div>
         <div className="mainContent grid">
-          <div className="singleDestination">
-            <div className="destImage">
-              <img src={img} alt="Image title" />
-              <div className="overlayInfo">
-                <h3>Welcome to London</h3>
-                <p>
-                “Life is either a daring adventure or nothing at all.” 
-                </p>
-                <BsArrowRightShort className='icon'/>
+          {
+            Data.map(({id,imgSrc,destTitle,location,grade})=>{
+              return(
+              <div className="singleDestination">
+              <div className="destImage">
+                <img src={imgSrc} alt="Image title" />
+                <div className="overlayInfo">
+                  <h3>{destTitle}</h3>
+                  <p>
+                  {location} 
+                  </p>
+                  <BsArrowRightShort className='icon'/>
+                </div>
               </div>
-            </div>
-            <div className="destFooter">
-              <div className="number">01</div>
-              <div className="destText flex">
-                <h6>London</h6>
-                <span className='flex'>
-                  <span className="dot">
-                    <BsDot className="icon"/>
+              <div className="destFooter">
+                <div className="number">0{id}</div>
+                <div className="destText flex">
+                  <h6>{location}</h6>
+                  <span className='flex'>
+                    <span className="dot">
+                      <BsDot className="icon"/>
+                    </span>
+                    Dot
                   </span>
-                  Dot
-                </span>
+                </div>
               </div>
-            </div>
-          </div>
+            </div>)
+            })
+          }
         </div>
       </div>
     </section>

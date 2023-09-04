@@ -7,8 +7,9 @@
   --textColor: hsl(248, 1%, 48%);
   --whiteColorDeam: hsl(0, 0%, 93%);
   --greyBg: hsl(0, 2%, 83%);
-  --greyText: rgb(190, 190, 190);
+  --greyText: rgb(199, 197, 197);
   --inputColor: hsl(330, 12%, 97%);
+  --greenColor: hsl(75, 3%, 24%);
 }
 
 .navBarSection .header {
@@ -31,6 +32,7 @@
 .navBarSection .header .logoDiv .logo .icon {
   color: var(--PrimaryColor);
   font-size: 25px;
+  margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
   .navBarSection .header .navBar {
@@ -108,4 +110,8 @@
 }
 .navBarSection .header .toggleNavbar .icon:hover {
   color: var(--PrimaryColor);
+}
+.navBarSection .activeHeader {
+  background: var(--greenColor);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
 }/*# sourceMappingURL=navbar.css.map */

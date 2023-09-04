@@ -16,10 +16,22 @@ const Navbar = () => {
   // to remove navbar
  const removeNav =()=>{
     setActive('navBar')
+ }
+  //Add Backround color to the header
+  const[transparent, setTrasparent] = useState('header')
+  const addBg = ()=>{
+    if(window.scrollY >= 10){
+      setTrasparent('header activeHeader')
+    }
+    else{
+      setTrasparent('header')
+    }
   }
+  window.addEventListener('scroll', addBg)
+
   return (
     <section className='navBarSection'>
-      <div className='header'>
+      <div className={transparent}>
         <div className='logoDiv'>
         <a href='#'className='logo'>
           <h1 className='flex'> <SiYourtraveldottv className='icon'/>CARTTRIP</h1>
@@ -70,5 +82,4 @@ const Navbar = () => {
     </section>
   )
 }
-
 export default Navbar
