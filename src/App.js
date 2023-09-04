@@ -14,8 +14,8 @@ const App = () => {
     <>
     <Navbar/>
     <Home/>
-   {/*<Popular/>
-    <Offer/>
+   <Popular/>
+    {/*<Offer/>
     <About/>
     <Blog/>
   <Footer>*/}
