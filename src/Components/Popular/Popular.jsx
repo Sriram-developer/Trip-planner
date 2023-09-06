@@ -20,49 +20,48 @@ const Data = [
   {
     id:1,
     imgSrc: img2,
-    destTitle: "marriot",
-    location: "peru",
-    grade: "Cultural Relax",
+    destTitle: "Coimbatore to Bali",
+    location: "Bali is rated as one of the best travel destinations in the world by countless websites, review portals, and travel magazines each year – for very good reasons.",
+    grade: "grade is five star ",
   },
 
   {
     id:2,
     imgSrc: img3,
-    destTitle: "marriot",
-    location: "peru",
-    grade: "Cultural Relax",
-  },
+    destTitle: "Coimbatore to Himalayas",
+    location: "Embark on unforgettable trekking adventures in the Himalayas with Trek The Himalayas. Discover the best treks in India and explore stunning landscapes on ...",
+    grade: "grade is five star ",},
 
   {
     id:3,
     imgSrc: img4,
-    destTitle: "marriot",
-    location: "peru",
+    destTitle: "Tailand",
+    location: "A mesmerizing destination, it covers an area of 513,120 sq kms. This beautiful country is a potpourri of multiple cultures. From ascetic lifestyles of the monks ...",
     grade: "Cultural Relax",
   },
 
   {
     id:3,
     imgSrc: img5,
-    destTitle: "marriot",
-    location: "peru",
-    grade: "Cultural Relax",
+    destTitle: "Malasiya",
+    location: "Enjoy the malaai",
+    grade: "grade 5 Relax",
   },
 
   {
     id:4,
     imgSrc: img6,
-    destTitle: "marriot",
-    location: "peru",
+    destTitle: "Manali",
+    location: "Enjoy the parks of kullumanali ",
     grade: "Cultural Relax",
   },
 
   {
     id:5,
     imgSrc: img7,
-    destTitle: "marriot",
-    location: "peru",
-    grade: "Cultural Relax",
+    destTitle: "Shimla",
+    location: "Enjoy the trekking movement day by day",
+    grade: "garde 5 trekking",
   },
 ]
 
@@ -103,12 +102,12 @@ const Popular = () => {
               <div className="destFooter">
                 <div className="number">0{id}</div>
                 <div className="destText flex">
-                  <h6>{location}</h6>
+                  <h6>{destTitle}</h6>
                   <span className='flex'>
                     <span className="dot">
                       <BsDot className="icon"/>
                     </span>
-                    Dot
+                    CART
                   </span>
                 </div>
               </div>
