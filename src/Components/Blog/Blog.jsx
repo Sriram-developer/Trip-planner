@@ -3,7 +3,15 @@ import './blog.css'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <section className='blog container section'>
+      <div className="secContainer">
+        <div className="secIntro">
+          <h2 className="secTitle">
+            Our Best Blog?
+          </h2>
+        </div>
+      </div>
+    </section>
   )
 }
 

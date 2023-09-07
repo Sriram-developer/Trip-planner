@@ -16,9 +16,10 @@ const App = () => {
     <Home/>
    <Popular/>
     <Offer/>
-    {/*<About/>
+    <About/>
+    {/*<Footer/>*/}
     <Blog/>
-  <Footer>*/}
+  
     </>
   )
 }

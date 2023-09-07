@@ -8,7 +8,70 @@ import {MdLocationOn} from 'react-icons/md'
 import {BsArrowRightShort} from 'react-icons/bs'
 
 // Let import images
-import img from '../../Assets/image9.jpg'
+import img8 from '../../Assets/image 8.jpg'
+import img9 from '../../Assets/image9.jpg'
+import img10 from '../../Assets/image10.jpg'
+import img11 from '../../Assets/image11.jpg'
+import img1 from '../../Assets/image1.jpg'
+import img2 from '../../Assets/image2.jpg'
+// Add Mapping to the image
+
+const Offers = [
+  {
+    id:1,
+    imgSrc:img1,
+    destTitle: "Coimbatore to Bali",
+    capz: "Bali is rated as one of the best travel destinations in the world by countless websites, review portals, and travel magazines each year – for very good reasons.",
+    price: "₹19,000",
+    off: "20%",  
+  },
+
+  {
+    id:2,
+    imgSrc: img8,
+    destTitle: "Coimbatore to Himalayas",
+    capz: "Embark on unforgettable trekking adventures in the Himalayas with Trek The Himalayas. Discover the best treks in India and explore stunning landscapes on ...",
+    price: "₹20,000",
+    off: "20%",
+  
+  },
+
+  {
+    id:3,
+    imgSrc: img9,
+    destTitle: "Tailand",
+    capz: "A mesmerizing destination, it covers an area of 513,120 sq kms. This beautiful country is a potpourri of multiple cultures. From ascetic lifestyles of the monks ...",
+    price: "₹39,000",
+    off: "15%",
+  },
+
+  {
+    id:3,
+    imgSrc: img10,
+    destTitle: "Malasiya",
+    capz: "Enjoy the malaai",
+    price: "₹49,000",
+    off: "20%",
+  },
+
+  {
+    id:4,
+    imgSrc: img11,
+    destTitle: "Manali",
+    capz: "Enjoy the parks of kullumanali ",
+    price: "₹49,000",
+    off: "30%",
+  },
+
+  {
+    id:5,
+    imgSrc: img2,
+    destTitle: "Shimla",
+    capz: "Enjoy the trekking movement day by day",
+    price: "₹29,000",
+    off: "10%",
+  },
+]
 
 const Offer = () => {
   return (
@@ -23,17 +86,20 @@ const Offer = () => {
           </p>
         </div>
         <div className="mainContent grid">
-          <div className="singleOffer">
+        {
+        Offers.map(({id, imgSrc, destTitle, capz, price, off })=>{
+          return(
+             <div className="singleOffer">
             <div className="destImage">
-              <img src={img} alt="Image Name" />
+              <img src={imgSrc} alt={capz} />
               <span className="discount">
-                30% OFF
+                {off} OFF
               </span>
             </div>
 
             <div className="offerBody">
               <div className="price flex">
-                <h4>Rs 19000</h4>
+                <h4>{price}</h4>
                 <span className="status">
                   For Booking
                 </span>
@@ -48,7 +114,7 @@ const Offer = () => {
                   
                <div className="singleAmenity flex">
                   <MdBathtub className="icon"/>
-                  <small>1 Beds</small>
+                  <small>1 Bath</small>
                 </div>
 
                 <div className="singleAmenity flex">
@@ -64,7 +130,7 @@ const Offer = () => {
 
               <div className="location flex">
                 <MdLocationOn className="icon"/>
-                <small>450 vine #310, London</small>
+                <small> At Cartrabbit venue, {destTitle} </small>
               </div>
 
               <button className='btn flex'>
@@ -73,6 +139,9 @@ const Offer = () => {
               </button>
             </div>
           </div>
+          );
+        })
+        }
         </div>
       </div>
     </section>
