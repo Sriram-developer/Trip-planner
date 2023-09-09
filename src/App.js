@@ -17,9 +17,8 @@ const App = () => {
    <Popular/>
     <Offer/>
     <About/>
-    {/*<Footer/>*/}
     <Blog/>
-  
+    <Footer/>
     </>
   )
 }
