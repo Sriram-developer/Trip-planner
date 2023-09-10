@@ -23,7 +23,7 @@ const Data = [
   {
     id:1,
     imgSrc: img2,
-    destTitle: "Coimbatore to Bali",
+    destTitle: "Bali",
     location: "Bali is rated as one of the best travel destinations in the world by countless websites, review portals, and travel magazines each year – for very good reasons.",
     grade: "grade is five star ",
   },
@@ -31,7 +31,7 @@ const Data = [
   {
     id:2,
     imgSrc: img3,
-    destTitle: "Coimbatore to Himalayas",
+    destTitle: "Himalayas",
     location: "Embark on unforgettable trekking adventures in the Himalayas with Trek The Himalayas. Discover the best treks in India and explore stunning landscapes on ...",
     grade: "grade is five star ",},
 

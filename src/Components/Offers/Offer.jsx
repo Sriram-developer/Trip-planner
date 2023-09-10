@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './offer.css'
 import {MdKingBed} from 'react-icons/md'
 import {MdBathtub} from 'react-icons/md'
@@ -6,6 +6,9 @@ import {FaWifi} from 'react-icons/fa'
 import {MdAirportShuttle} from 'react-icons/md'
 import {MdLocationOn} from 'react-icons/md'
 import {BsArrowRightShort} from 'react-icons/bs'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 // Let import images
 import img8 from '../../Assets/image 8.jpg'
@@ -20,7 +23,7 @@ const Offers = [
   {
     id:1,
     imgSrc:img1,
-    destTitle: "Coimbatore to Bali",
+    destTitle: " Bali",
     capz: "Bali is rated as one of the best travel destinations in the world by countless websites, review portals, and travel magazines each year – for very good reasons.",
     price: "₹19,000",
     off: "20%",  
@@ -29,7 +32,7 @@ const Offers = [
   {
     id:2,
     imgSrc: img8,
-    destTitle: "Coimbatore to Himalayas",
+    destTitle: " Himalayas",
     capz: "Embark on unforgettable trekking adventures in the Himalayas with Trek The Himalayas. Discover the best treks in India and explore stunning landscapes on ...",
     price: "₹20,000",
     off: "20%",
@@ -74,9 +77,13 @@ const Offers = [
 ]
 
 const Offer = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <section className='offer container section'>
-      <div className="secContainer">
+      <div data-aos='fade-up'  data-aos-duration='2000'className="secContainer">
         <div className="secIntro">
           <h2 className="secTitle">
             Special Offers
@@ -89,7 +96,7 @@ const Offer = () => {
         {
         Offers.map(({id, imgSrc, destTitle, capz, price, off })=>{
           return(
-             <div className="singleOffer">
+             <div data-aos='fade-up'  data-aos-duration='3000'className="singleOffer">
             <div className="destImage">
               <img src={imgSrc} alt={capz} />
               <span className="discount">

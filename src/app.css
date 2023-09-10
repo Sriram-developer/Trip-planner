@@ -109,14 +109,14 @@
   // default styling
 
   @media screen and (min-width: 556px) {
-    .mainContent, .singlePost{
-      grid-template-column: repeat(2, 1fr);
+    .mainContent .singlePost{
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media screen and (min-width: 884px) {
     .mainContent{
-      grid-template-column: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
