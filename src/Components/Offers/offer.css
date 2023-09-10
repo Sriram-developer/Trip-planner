@@ -1,4 +1,4 @@
-/* colors */
+
 :root {
   --PrimaryColor: hsl(26, 93%, 50%);
   --HoverColor: hsl(26, 98%, 42%);
@@ -97,4 +97,4 @@
 }
 .offer .secContainer .mainContent .singleOffer:hover {
   transform: translateY(-7px);
-}/*# sourceMappingURL=offer.css.map */
+}

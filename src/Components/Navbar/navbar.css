@@ -1,4 +1,4 @@
-/* colors */
+
 :root {
   --PrimaryColor: hsl(26, 93%, 50%);
   --HoverColor: hsl(26, 98%, 42%);
@@ -165,4 +165,4 @@
   .header {
     padding: 1rem 8.5rem !important;
   }
-}/*# sourceMappingURL=navbar.css.map */
+}

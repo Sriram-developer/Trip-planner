@@ -1,4 +1,4 @@
-/* colors */
+
 :root {
   --PrimaryColor: hsl(26, 93%, 50%);
   --HoverColor: hsl(26, 98%, 42%);
@@ -141,4 +141,4 @@
   .home .secContainer .homeCard {
     width: 70%;
   }
-}/*# sourceMappingURL=home.css.map */
+}
