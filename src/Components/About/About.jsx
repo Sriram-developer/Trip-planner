@@ -24,7 +24,7 @@ const About = () => {
         </h2>
         <div className="mainContent container grid">
           <div data-aos='fade-up'  data-aos-duration='3000'className="singleItem">
-            <img src={img3} alt="Image Name" />
+            <img src={img3}alt="Image Name" />
             <h3>100+ Mountains</h3>
             <p>
             The mountains are our favorite place to be. We live for the achievement of summiting and the views along the way. 
