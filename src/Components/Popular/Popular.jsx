@@ -44,7 +44,7 @@ const Data = [
   },
 
   {
-    id:3,
+    id:4,
     imgSrc: img5,
     destTitle: "Malasiya",
     location: "Enjoy the malaai",
@@ -52,7 +52,7 @@ const Data = [
   },
 
   {
-    id:4,
+    id:5,
     imgSrc: img6,
     destTitle: "Manali",
     location: "Enjoy the parks of kullumanali ",
@@ -60,7 +60,7 @@ const Data = [
   },
 
   {
-    id:5,
+    id:6,
     imgSrc: img7,
     destTitle: "Shimla",
     location: "Enjoy the trekking movement day by day",
