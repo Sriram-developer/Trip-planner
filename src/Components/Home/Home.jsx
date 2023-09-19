@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(()=>{
     Aos.init({duration: 2000})
-  }, [])
+  }, [])//useEffect
 
 
 
